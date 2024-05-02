@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Products</h1>
+    <div class="categories">
+        {% for product in products %}
+        <a class="category">
+            {% if product.image %}
+            <img src="{{ product.image.url }}">
+            {% else %}
+            <p class="no-image">No image available</p>
+            {% endif %}
+            <p class="category-title">{{ product.name }}</p>
+            <p class="category-price">₸ {{ product.price }} KZT</p>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

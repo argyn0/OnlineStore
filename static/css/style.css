@@ -1,0 +1,165 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(227, 226, 226);
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.header {
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.footer {
+    height: 150px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    flex-direction: column;
+}
+
+.footer-container p {
+    margin-top: 35px;
+}
+
+.footer-container-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-container-1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container-1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.links {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.link {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: rgb(78, 78, 225);
+}
+
+.container-1 a {
+    color: white;
+}
+
+.container-2 a {
+    color: white;
+}
+
+.container-2 {
+    color: rgb(146, 146, 146);
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* Выравнивание категорий по левому краю */
+    align-items: center;
+    margin: 0 auto;
+    /* Отцентрировать по горизонтали */
+}
+
+.category {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+.category img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    /* Изображение будет вписываться в размеры контейнера с сохранением пропорций и обрезкой, если необходимо */
+    border-radius: 10px;
+}
+
+
+.category-title {
+    color: black;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.category-price {
+    font-size: 18px;
+    color: rgb(78, 78, 225);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+
+.container h1 {
+    margin: 10px;
+    font-weight: 400;
+}
+
+.no-image {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    /* Выравнивание текста по центру */
+    display: flex;
+    /* Превращаем блок в flex-контейнер */
+    align-items: center;
+    /* Выравниваем по вертикали по центру */
+    justify-content: center;
+    /* Выравниваем по горизонтали по центру */
+    border: 1px solid #ccc;
+    /* Добавляем рамку для ясности */
+    border-radius: 10px;
+    color: black;
+    margin: 0;
+}
